@@ -1,0 +1,41 @@
+@use '../styles/mixin.scss' as mixin;
+
+.container {
+  background-color: white;
+  width: 18rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: mixin.$boxshadow-md;
+  display: flex;
+  flex-direction: column;
+}
+
+.option {
+  margin: 0.7rem 0;
+  background-color: gray;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding: 0.7rem 0;
+  font-family: mixin.$sans;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: mixin.$boxshadow-md;
+  cursor: pointer;
+}
+
+.success {
+  background-color: mixin.$success;
+}
+
+.info {
+  background-color: mixin.$info;
+}
+
+.warning {
+  background-color: mixin.$warning;
+}
+
+.error {
+  background-color: mixin.$error;
+}
